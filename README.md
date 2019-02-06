@@ -1,12 +1,5 @@
 # Web Application Project
 
-## Application Preview:
-![LIT Realty Homepage](https://i.imgur.com/GOOk1l6.jpg)
-
-![LIT Realty Encrypted Cookies](https://i.imgur.com/JrucdrZ.png)
-
-![LIT Realty Recommendation System](https://i.imgur.com/Ax6Bvwq.jpg)
-
 ## Agent Functionality:
 - Log-in and log-out feature for agents (each agent must be authenticated using their user-name and password from the database. Once logged in, each agent must able to: 
 	- [x] View, edit, delete and insert a property to the database. An insertion/update must also include the ability to upload a new/updated image(s) for the property in question.  A property can have multiple images associated with it and your update/insert features must cater for this requirement. Any deletion must require the agent to confirm whether they are sure they want to proceed with this deletion or not.  
@@ -67,3 +60,14 @@ However, the unique feature should include some custom code. Incorporating API's
 
 - [x] UI:
 	- Bootstrap is used throughout the website for a better user experience.
+
+## Application Preview:
+### LIT Realty Homepage
+![LIT Realty Homepage](https://i.imgur.com/GOOk1l6.jpg)
+
+### LIT Realty Encrypted Cookies
+![LIT Realty Encrypted Cookies](https://i.imgur.com/JrucdrZ.png)
+
+### LIT Realty Recommendation System
+![LIT Realty Recommendation System](https://i.imgur.com/Ax6Bvwq.jpg)
+
