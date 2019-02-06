@@ -1,5 +1,12 @@
 # Web Application Project
 
+## Application Preview:
+![LIT Realty Homepage](https://i.imgur.com/GOOk1l6.jpg)
+
+![LIT Realty Encrypted Cookies](https://i.imgur.com/JrucdrZ.png)
+
+![LIT Realty Recommendation System](https://i.imgur.com/Ax6Bvwq.jpg)
+
 ## Agent Functionality:
 - Log-in and log-out feature for agents (each agent must be authenticated using their user-name and password from the database. Once logged in, each agent must able to: 
 	- [x] View, edit, delete and insert a property to the database. An insertion/update must also include the ability to upload a new/updated image(s) for the property in question.  A property can have multiple images associated with it and your update/insert features must cater for this requirement. Any deletion must require the agent to confirm whether they are sure they want to proceed with this deletion or not.  
@@ -8,11 +15,11 @@
 
 - Extra Functionality:
 	- [x] Mutli select upload:
-	- Handles special cases such as updating, folder change.
-	- [x] Authorization
-	- Only agents assigned to a property can edit and delete those properties.
+		- Handles special cases such as updating, folder change.
+	- [x] Authorization:
+		- Only agents assigned to a property can edit and delete those properties.
 	- [x] Validation:
-	- Empty fields, xss/sql.
+		- Empty fields, xss/sql.
 
 ## Customer Functionality
 - [x] Every customer will be able to search the database for a property based on its price and location. The search results should be presented in tabular form. This table must include a thumbnail image for the property. As an extra option, the customer should also be able to refine their search results - consider using Data Tables (https://datatables.net/) to help you refine your search results.  
@@ -28,35 +35,35 @@
 However, the unique feature should include some custom code. Incorporating API's/code from online will only get you so far. 
 
 - [x] Tracking Cookie:
-	- AES 256 Encryption
-	- Unique ID generator
-	- PBKDF2WithHmacSHA256 
-		- Generate a secure symmetric AES key
-	- Anti tampering
-		- GCM operation mode
+	- AES 256 Encryption.
+	- Unique ID generator.
+	- PBKDF2WithHmacSHA256:
+		- Generate a secure symmetric AES key.
+	- Anti tampering:
+		- GCM operation mode.
 
-- [x] User Tracking
-	- Works with Tracking Cookie to display relevant properties based on their searches
-	- Frequency of urls searched
-	- Handles favourites feature too (also encrypted)
-	- Tracking Filter
+- [x] User Tracking:
+	- Works with Tracking Cookie to display relevant properties based on their searches.
+	- Frequency of urls searched.
+	- Handles favourites feature too (also encrypted).
+	- Tracking Filter.
 
-- [x] Home Screen 
-	- Both User Tracking and Tracking Cookie display properties relevant to the user, helping to increase "sales"
-	- Gets most prominent search
-		- Selects a max of 4 and a minimum of 1 properties based on that search
+- [x] Home Screen:
+	- Both User Tracking and Tracking Cookie display properties relevant to the user, helping to increase "sales".
+	- Gets most prominent search:
+		- Selects a max of 4 and a minimum of 1 properties based on that search.
 		- If there are more than 4 properties, it randomly displays 4.
-	- Margin of error
-		- 1/4 of lean way on based price for the sql query to recommended properties
+	- Margin of error:
+		- 1/4 of lean way on based price for the sql query to recommended properties.
 
-- [x] Session Servlet
+- [x] Session Servlet:
 	- Reduces the number of queries on the database by storing the agents, property types, style types, garage types and vendors in the current session.
 
-- [x] SHA256, Salt & 10,000
+- [x] SHA256, Salt & 10,000:
 	- Secure database password hashing with SHA256, randomly generated salt and 10,000 iterations.
 
-- [x] Dashboard Security
+- [x] Dashboard Security:
 	- All administrative features are checked with a filter to ensure the user is authenticated.
 
-- [x] UI
+- [x] UI:
 	- Bootstrap is used throughout the website for a better user experience.
